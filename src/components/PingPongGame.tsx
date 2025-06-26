@@ -26,7 +26,7 @@ const BALL_SPEED = 4;
 
 const PingPongGame: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
   const [isRunning, setIsRunning] = useState(true);
   const [score, setScore] = useState<{ left: number; right: number }>({ left: 0, right: 0 });
 
